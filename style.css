@@ -1,0 +1,152 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+:root {
+    --color1: rgb(47 48 52);
+    --color2: rgb(39, 44, 40);
+    --color3: rgb(110, 172, 218);
+    --color4: rgb(226, 226, 182);
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color1);
+    position: sticky;
+    top: 0px;
+    z-index: 10000;
+    color: var(--color4);
+    align-items: center;
+}
+
+.logo {
+    margin-left: 66px;
+    font-size: 30px;
+    font-family: "Cairo Play", serif;
+}
+
+.ul {
+    display: flex;
+    justify-content: center;
+
+    margin-right: 23px;
+}
+
+.ul li {
+    list-style: none;
+    padding: 23px;
+    color: var(--color4);
+    text-align: center;
+    margin: 2px;
+}
+
+.ul a {
+    color: var(--color4);
+    font-weight: 500;
+    font-size: 2cap;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+
+.ul a:hover {
+    color: rgb(232, 213, 10);
+
+}
+
+.fixed {
+    background-color: var(--color1);
+    padding: 23px;
+    width: 0px;
+    height: 0px;
+    border-radius: 100px;
+    position: fixed;
+    cursor: pointer;
+    right: 27px;
+    bottom: 23px;
+
+}
+
+.fixed img {
+    position: relative;
+    top: -15px;
+    left: -15px;
+}
+
+/* main */
+
+.card {
+    background-color: white;
+    height: 320px;
+    width: 18%;
+    border-radius: 7px;
+    justify-items: center;
+    margin: 23px 23px;
+    padding: 12px 6px 0px 6px;
+    box-shadow: 0px 1px 20px 2px #595e5d;
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+    border-radius: 7px;
+    position: relative;
+
+    background-position: bottom left;
+}
+
+.text {
+    color: var(--color1);
+    padding: 8px 3px;
+    text-align: center;
+}
+
+.text div {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.btn {
+    width: 100%;
+}
+
+.btn button {
+    padding: 7px;
+    width: 100%;
+    font-size: 17px;
+    background-color: rgb(255, 255, 110);
+    cursor: pointer;
+    border: none;
+    color: var(--color1);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn button:hover {
+    background-color: yellow;
+
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer {
+    justify-items: center;
+    padding: 23px;
+    background-color: var(--color1);
+    color: aliceblue;
+    transition: color 0.5s;
+}
+
+footer:hover {
+    color: yellow;
+}
